@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		443EF1E121A5FBA400AB22C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1E021A5FBA400AB22C1 /* AppDelegate.swift */; };
-		443EF1E321A5FBA400AB22C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1E221A5FBA400AB22C1 /* ViewController.swift */; };
-		443EF1E621A5FBA400AB22C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443EF1E421A5FBA400AB22C1 /* Main.storyboard */; };
 		443EF1E821A5FBA500AB22C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443EF1E721A5FBA500AB22C1 /* Assets.xcassets */; };
 		443EF1EB21A5FBA500AB22C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443EF1E921A5FBA500AB22C1 /* LaunchScreen.storyboard */; };
+		443EF20221A5FF8900AB22C1 /* HomeModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1F721A5FF8900AB22C1 /* HomeModuleDelegate.swift */; };
+		443EF20321A5FF8900AB22C1 /* HomeModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1F821A5FF8900AB22C1 /* HomeModuleInterface.swift */; };
+		443EF20421A5FF8900AB22C1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1F921A5FF8900AB22C1 /* HomePresenter.swift */; };
+		443EF20521A5FF8900AB22C1 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1FB21A5FF8900AB22C1 /* HomeWireframe.swift */; };
+		443EF20621A5FF8900AB22C1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1FD21A5FF8900AB22C1 /* HomeVC.swift */; };
+		443EF20721A5FF8900AB22C1 /* HomeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF1FE21A5FF8900AB22C1 /* HomeViewInterface.swift */; };
+		443EF20821A5FF8900AB22C1 /* HomeInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20021A5FF8900AB22C1 /* HomeInteractorIO.swift */; };
+		443EF20921A5FF8900AB22C1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20121A5FF8900AB22C1 /* HomeInteractor.swift */; };
+		443EF20B21A5FFF800AB22C1 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20A21A5FFF800AB22C1 /* RootWireframe.swift */; };
+		443EF20E21A6021800AB22C1 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20D21A6021800AB22C1 /* ServiceFactory.swift */; };
 		9D94ADFCBE6F2173C6CEA96C /* Pods_Vacancies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B3B2C09829A026FCEF3599 /* Pods_Vacancies.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +27,19 @@
 		12A291E49ED3F168A4E82195 /* Pods-Vacancies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacancies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vacancies/Pods-Vacancies.release.xcconfig"; sourceTree = "<group>"; };
 		443EF1DD21A5FBA400AB22C1 /* Vacancies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacancies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443EF1E021A5FBA400AB22C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		443EF1E221A5FBA400AB22C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		443EF1E521A5FBA400AB22C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443EF1E721A5FBA500AB22C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443EF1EA21A5FBA500AB22C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443EF1EC21A5FBA500AB22C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443EF1F721A5FF8900AB22C1 /* HomeModuleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleDelegate.swift; sourceTree = "<group>"; };
+		443EF1F821A5FF8900AB22C1 /* HomeModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInterface.swift; sourceTree = "<group>"; };
+		443EF1F921A5FF8900AB22C1 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		443EF1FB21A5FF8900AB22C1 /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		443EF1FD21A5FF8900AB22C1 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		443EF1FE21A5FF8900AB22C1 /* HomeViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewInterface.swift; sourceTree = "<group>"; };
+		443EF20021A5FF8900AB22C1 /* HomeInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorIO.swift; sourceTree = "<group>"; };
+		443EF20121A5FF8900AB22C1 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		443EF20A21A5FFF800AB22C1 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		443EF20D21A6021800AB22C1 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		8581CED01A6AFEAC1E2644BB /* Pods-Vacancies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacancies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacancies/Pods-Vacancies.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B3B2C09829A026FCEF3599 /* Pods_Vacancies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacancies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,14 +77,94 @@
 		443EF1DF21A5FBA400AB22C1 /* Vacancies */ = {
 			isa = PBXGroup;
 			children = (
-				443EF1E021A5FBA400AB22C1 /* AppDelegate.swift */,
-				443EF1E221A5FBA400AB22C1 /* ViewController.swift */,
-				443EF1E421A5FBA400AB22C1 /* Main.storyboard */,
-				443EF1E721A5FBA500AB22C1 /* Assets.xcassets */,
-				443EF1E921A5FBA500AB22C1 /* LaunchScreen.storyboard */,
-				443EF1EC21A5FBA500AB22C1 /* Info.plist */,
+				443EF1F221A5FF0F00AB22C1 /* Modules */,
+				443EF1F321A5FF1700AB22C1 /* Resources */,
+				443EF20C21A6013100AB22C1 /* Services */,
+				443EF1F421A5FF3600AB22C1 /* Supporting Files */,
 			);
 			path = Vacancies;
+			sourceTree = "<group>";
+		};
+		443EF1F221A5FF0F00AB22C1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1F521A5FF8900AB22C1 /* Home Module */,
+				443EF1E021A5FBA400AB22C1 /* AppDelegate.swift */,
+				443EF20A21A5FFF800AB22C1 /* RootWireframe.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		443EF1F321A5FF1700AB22C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1E721A5FBA500AB22C1 /* Assets.xcassets */,
+				443EF1E921A5FBA500AB22C1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		443EF1F421A5FF3600AB22C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1EC21A5FBA500AB22C1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		443EF1F521A5FF8900AB22C1 /* Home Module */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1FF21A5FF8900AB22C1 /* Interactor */,
+				443EF1F621A5FF8900AB22C1 /* Presenter */,
+				443EF1FC21A5FF8900AB22C1 /* View */,
+				443EF1FA21A5FF8900AB22C1 /* Wireframe */,
+			);
+			path = "Home Module";
+			sourceTree = "<group>";
+		};
+		443EF1F621A5FF8900AB22C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1F721A5FF8900AB22C1 /* HomeModuleDelegate.swift */,
+				443EF1F821A5FF8900AB22C1 /* HomeModuleInterface.swift */,
+				443EF1F921A5FF8900AB22C1 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		443EF1FA21A5FF8900AB22C1 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1FB21A5FF8900AB22C1 /* HomeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		443EF1FC21A5FF8900AB22C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				443EF1FD21A5FF8900AB22C1 /* HomeVC.swift */,
+				443EF1FE21A5FF8900AB22C1 /* HomeViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		443EF1FF21A5FF8900AB22C1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				443EF20021A5FF8900AB22C1 /* HomeInteractorIO.swift */,
+				443EF20121A5FF8900AB22C1 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		443EF20C21A6013100AB22C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				443EF20D21A6021800AB22C1 /* ServiceFactory.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		5571737629026AFAE7EC3B35 /* Frameworks */ = {
@@ -150,7 +246,6 @@
 			files = (
 				443EF1EB21A5FBA500AB22C1 /* LaunchScreen.storyboard in Resources */,
 				443EF1E821A5FBA500AB22C1 /* Assets.xcassets in Resources */,
-				443EF1E621A5FBA400AB22C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,22 +297,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443EF1E321A5FBA400AB22C1 /* ViewController.swift in Sources */,
+				443EF20B21A5FFF800AB22C1 /* RootWireframe.swift in Sources */,
 				443EF1E121A5FBA400AB22C1 /* AppDelegate.swift in Sources */,
+				443EF20721A5FF8900AB22C1 /* HomeViewInterface.swift in Sources */,
+				443EF20221A5FF8900AB22C1 /* HomeModuleDelegate.swift in Sources */,
+				443EF20E21A6021800AB22C1 /* ServiceFactory.swift in Sources */,
+				443EF20321A5FF8900AB22C1 /* HomeModuleInterface.swift in Sources */,
+				443EF20621A5FF8900AB22C1 /* HomeVC.swift in Sources */,
+				443EF20821A5FF8900AB22C1 /* HomeInteractorIO.swift in Sources */,
+				443EF20921A5FF8900AB22C1 /* HomeInteractor.swift in Sources */,
+				443EF20521A5FF8900AB22C1 /* HomeWireframe.swift in Sources */,
+				443EF20421A5FF8900AB22C1 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		443EF1E421A5FBA400AB22C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				443EF1E521A5FBA400AB22C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		443EF1E921A5FBA500AB22C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -351,8 +447,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Vacancies/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/Vacancies/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hh-test.vacancies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -366,8 +465,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Vacancies/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/Vacancies/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hh-test.vacancies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
