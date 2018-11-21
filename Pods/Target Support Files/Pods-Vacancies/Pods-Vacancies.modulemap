@@ -1,0 +1,6 @@
+framework module Pods_Vacancies {
+  umbrella header "Pods-Vacancies-umbrella.h"
+
+  export *
+  module * { export * }
+}
