@@ -29,6 +29,6 @@ class RootWireframe {
     
     func presentHomeModule() {
         let wireframe = HomeWireframe(rootWireframe: self)
-        wireframe.presentHomeController(nc: self.navigationController)
+        wireframe.presentHomeController(nc: self.navigationController, vacanciesService: self.services.vacanciesService)
     }
 }

@@ -9,9 +9,15 @@
 import Foundation
 
 protocol ServiceFactory {
-    
+    var vacanciesService: VacanciesService { get }
 }
 
-class ServiceFactoryDefault: ServiceFactory {
+class DefaultServiceFactory: ServiceFactory {
+    private(set) var vacanciesService: VacanciesService
     
+    init() {
+        let parserService = HHNetworkJsonParserService()
+        let dataSourceService = HHNetworkService(parser: parserService)
+        self.vacanciesService = DefaultVacanciesService(dataSource: dataSourceService)
+    }
 }

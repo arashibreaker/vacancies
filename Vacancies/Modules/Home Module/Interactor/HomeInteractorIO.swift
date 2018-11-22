@@ -7,10 +7,14 @@
 //
 
 protocol HomeInteractorInput {
-    
+    func loadVacancies()
+    func loadMoreVacancies()
 }
 
 
 protocol HomeInteractorOutput: class {
-    
+    func loadVacanciesSucceed(vacancies: [Vacancy])
+    func loadMoreVacanciesSucceed(vacancies: [Vacancy])
+    func loadVacanciesFailed(message: String)
+    func loadMoreVacanciesFailed(message: String)
 }

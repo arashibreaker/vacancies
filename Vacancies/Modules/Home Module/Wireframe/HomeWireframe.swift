@@ -17,11 +17,11 @@ class HomeWireframe {
         self.rootWireframe = rootWireframe
     }
     
-    func presentHomeController(nc: UINavigationController) {
+    func presentHomeController(nc: UINavigationController, vacanciesService: VacanciesService) {
         self.navigationController = nc
         
         let viewController = HomeVC()
-        let interactor = HomeInteractor()
+        let interactor = HomeInteractor(vacanciesService: vacanciesService)
         let presenter = HomePresenter()
         
         interactor.output = presenter

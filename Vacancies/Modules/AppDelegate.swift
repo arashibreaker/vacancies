@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         window.makeKeyAndVisible()
         
-        self.services = ServiceFactoryDefault()
+        self.services = DefaultServiceFactory()
         self.rootWireframe = RootWireframe(services: self.services)
         self.rootWireframe.install(window: window)
         

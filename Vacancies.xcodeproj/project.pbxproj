@@ -20,6 +20,19 @@
 		443EF20921A5FF8900AB22C1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20121A5FF8900AB22C1 /* HomeInteractor.swift */; };
 		443EF20B21A5FFF800AB22C1 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20A21A5FFF800AB22C1 /* RootWireframe.swift */; };
 		443EF20E21A6021800AB22C1 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20D21A6021800AB22C1 /* ServiceFactory.swift */; };
+		443EF21021A6071100AB22C1 /* DataSourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF20F21A6071100AB22C1 /* DataSourceService.swift */; };
+		443EF21321A60CF200AB22C1 /* Vacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF21221A60CF200AB22C1 /* Vacancy.swift */; };
+		443EF21521A60D5F00AB22C1 /* ParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF21421A60D5F00AB22C1 /* ParserService.swift */; };
+		443EF21821A60FB100AB22C1 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF21721A60FB100AB22C1 /* NetworkRequest.swift */; };
+		443EF21A21A6127200AB22C1 /* DataFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF21921A6127200AB22C1 /* DataFormatters.swift */; };
+		443EF21D21A6170D00AB22C1 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF21C21A6170D00AB22C1 /* StorageService.swift */; };
+		443EF21F21A6178D00AB22C1 /* VacanciesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EF21E21A6178D00AB22C1 /* VacanciesService.swift */; };
+		44C32EF121A71899004B03A1 /* VacancyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EF021A71899004B03A1 /* VacancyResponse.swift */; };
+		44C32EF321A71D99004B03A1 /* UIKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EF221A71D99004B03A1 /* UIKitService.swift */; };
+		44C32EF621A72B6D004B03A1 /* VacancyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EF521A72B6D004B03A1 /* VacancyCell.swift */; };
+		44C32EF921A72C0A004B03A1 /* HomeTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EF821A72C0A004B03A1 /* HomeTableModel.swift */; };
+		44C32EFB21A73594004B03A1 /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EFA21A73594004B03A1 /* Salary.swift */; };
+		44C32EFD21A738CA004B03A1 /* Employer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EFC21A738CA004B03A1 /* Employer.swift */; };
 		9D94ADFCBE6F2173C6CEA96C /* Pods_Vacancies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B3B2C09829A026FCEF3599 /* Pods_Vacancies.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +53,19 @@
 		443EF20121A5FF8900AB22C1 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		443EF20A21A5FFF800AB22C1 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		443EF20D21A6021800AB22C1 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		443EF20F21A6071100AB22C1 /* DataSourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceService.swift; sourceTree = "<group>"; };
+		443EF21221A60CF200AB22C1 /* Vacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancy.swift; sourceTree = "<group>"; };
+		443EF21421A60D5F00AB22C1 /* ParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserService.swift; sourceTree = "<group>"; };
+		443EF21721A60FB100AB22C1 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		443EF21921A6127200AB22C1 /* DataFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatters.swift; sourceTree = "<group>"; };
+		443EF21C21A6170D00AB22C1 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		443EF21E21A6178D00AB22C1 /* VacanciesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesService.swift; sourceTree = "<group>"; };
+		44C32EF021A71899004B03A1 /* VacancyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyResponse.swift; sourceTree = "<group>"; };
+		44C32EF221A71D99004B03A1 /* UIKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitService.swift; sourceTree = "<group>"; };
+		44C32EF521A72B6D004B03A1 /* VacancyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCell.swift; sourceTree = "<group>"; };
+		44C32EF821A72C0A004B03A1 /* HomeTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableModel.swift; sourceTree = "<group>"; };
+		44C32EFA21A73594004B03A1 /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
+		44C32EFC21A738CA004B03A1 /* Employer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employer.swift; sourceTree = "<group>"; };
 		8581CED01A6AFEAC1E2644BB /* Pods-Vacancies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacancies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacancies/Pods-Vacancies.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B3B2C09829A026FCEF3599 /* Pods_Vacancies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacancies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +103,7 @@
 		443EF1DF21A5FBA400AB22C1 /* Vacancies */ = {
 			isa = PBXGroup;
 			children = (
+				443EF21121A60CDC00AB22C1 /* Common */,
 				443EF1F221A5FF0F00AB22C1 /* Modules */,
 				443EF1F321A5FF1700AB22C1 /* Resources */,
 				443EF20C21A6013100AB22C1 /* Services */,
@@ -126,6 +153,7 @@
 		443EF1F621A5FF8900AB22C1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				44C32EF721A72BF4004B03A1 /* Models */,
 				443EF1F721A5FF8900AB22C1 /* HomeModuleDelegate.swift */,
 				443EF1F821A5FF8900AB22C1 /* HomeModuleInterface.swift */,
 				443EF1F921A5FF8900AB22C1 /* HomePresenter.swift */,
@@ -144,6 +172,7 @@
 		443EF1FC21A5FF8900AB22C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44C32EF421A72B53004B03A1 /* Cells */,
 				443EF1FD21A5FF8900AB22C1 /* HomeVC.swift */,
 				443EF1FE21A5FF8900AB22C1 /* HomeViewInterface.swift */,
 			);
@@ -162,9 +191,59 @@
 		443EF20C21A6013100AB22C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				443EF20F21A6071100AB22C1 /* DataSourceService.swift */,
+				443EF21421A60D5F00AB22C1 /* ParserService.swift */,
 				443EF20D21A6021800AB22C1 /* ServiceFactory.swift */,
+				443EF21C21A6170D00AB22C1 /* StorageService.swift */,
+				443EF21E21A6178D00AB22C1 /* VacanciesService.swift */,
+				44C32EF221A71D99004B03A1 /* UIKitService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		443EF21121A60CDC00AB22C1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				443EF21B21A614DE00AB22C1 /* Models */,
+				443EF21621A60F8D00AB22C1 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		443EF21621A60F8D00AB22C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				443EF21721A60FB100AB22C1 /* NetworkRequest.swift */,
+				443EF21921A6127200AB22C1 /* DataFormatters.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		443EF21B21A614DE00AB22C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				443EF21221A60CF200AB22C1 /* Vacancy.swift */,
+				44C32EF021A71899004B03A1 /* VacancyResponse.swift */,
+				44C32EFA21A73594004B03A1 /* Salary.swift */,
+				44C32EFC21A738CA004B03A1 /* Employer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44C32EF421A72B53004B03A1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44C32EF521A72B6D004B03A1 /* VacancyCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44C32EF721A72BF4004B03A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44C32EF821A72C0A004B03A1 /* HomeTableModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5571737629026AFAE7EC3B35 /* Frameworks */ = {
@@ -297,16 +376,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C32EF321A71D99004B03A1 /* UIKitService.swift in Sources */,
+				443EF21A21A6127200AB22C1 /* DataFormatters.swift in Sources */,
 				443EF20B21A5FFF800AB22C1 /* RootWireframe.swift in Sources */,
 				443EF1E121A5FBA400AB22C1 /* AppDelegate.swift in Sources */,
+				44C32EF621A72B6D004B03A1 /* VacancyCell.swift in Sources */,
+				443EF21521A60D5F00AB22C1 /* ParserService.swift in Sources */,
+				44C32EFB21A73594004B03A1 /* Salary.swift in Sources */,
 				443EF20721A5FF8900AB22C1 /* HomeViewInterface.swift in Sources */,
 				443EF20221A5FF8900AB22C1 /* HomeModuleDelegate.swift in Sources */,
 				443EF20E21A6021800AB22C1 /* ServiceFactory.swift in Sources */,
+				443EF21F21A6178D00AB22C1 /* VacanciesService.swift in Sources */,
 				443EF20321A5FF8900AB22C1 /* HomeModuleInterface.swift in Sources */,
+				443EF21821A60FB100AB22C1 /* NetworkRequest.swift in Sources */,
+				443EF21321A60CF200AB22C1 /* Vacancy.swift in Sources */,
+				44C32EF921A72C0A004B03A1 /* HomeTableModel.swift in Sources */,
 				443EF20621A5FF8900AB22C1 /* HomeVC.swift in Sources */,
 				443EF20821A5FF8900AB22C1 /* HomeInteractorIO.swift in Sources */,
+				443EF21D21A6170D00AB22C1 /* StorageService.swift in Sources */,
+				44C32EF121A71899004B03A1 /* VacancyResponse.swift in Sources */,
 				443EF20921A5FF8900AB22C1 /* HomeInteractor.swift in Sources */,
 				443EF20521A5FF8900AB22C1 /* HomeWireframe.swift in Sources */,
+				443EF21021A6071100AB22C1 /* DataSourceService.swift in Sources */,
+				44C32EFD21A738CA004B03A1 /* Employer.swift in Sources */,
 				443EF20421A5FF8900AB22C1 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

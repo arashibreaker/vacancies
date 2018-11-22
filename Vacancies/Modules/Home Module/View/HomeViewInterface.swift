@@ -7,5 +7,9 @@
 //
 
 protocol HomeViewInterface: class {
-    
+    func toggleSpinner(enabled: Bool)
+    func setCenteredMessage(message: String)
+    func hideCenteredMessage()
+    func reloadData()
+    func endRefreshingAnimation()
 }
