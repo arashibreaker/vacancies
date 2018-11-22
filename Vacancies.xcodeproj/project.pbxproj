@@ -33,6 +33,9 @@
 		44C32EF921A72C0A004B03A1 /* HomeTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EF821A72C0A004B03A1 /* HomeTableModel.swift */; };
 		44C32EFB21A73594004B03A1 /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EFA21A73594004B03A1 /* Salary.swift */; };
 		44C32EFD21A738CA004B03A1 /* Employer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32EFC21A738CA004B03A1 /* Employer.swift */; };
+		44C32F0221A75B05004B03A1 /* VacancyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32F0121A75B05004B03A1 /* VacancyObject.swift */; };
+		44C32F0421A75B10004B03A1 /* SalaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32F0321A75B10004B03A1 /* SalaryObject.swift */; };
+		44C32F0621A75B19004B03A1 /* EmployerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C32F0521A75B19004B03A1 /* EmployerObject.swift */; };
 		9D94ADFCBE6F2173C6CEA96C /* Pods_Vacancies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B3B2C09829A026FCEF3599 /* Pods_Vacancies.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		44C32EF821A72C0A004B03A1 /* HomeTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableModel.swift; sourceTree = "<group>"; };
 		44C32EFA21A73594004B03A1 /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
 		44C32EFC21A738CA004B03A1 /* Employer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employer.swift; sourceTree = "<group>"; };
+		44C32F0121A75B05004B03A1 /* VacancyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyObject.swift; sourceTree = "<group>"; };
+		44C32F0321A75B10004B03A1 /* SalaryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryObject.swift; sourceTree = "<group>"; };
+		44C32F0521A75B19004B03A1 /* EmployerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerObject.swift; sourceTree = "<group>"; };
 		8581CED01A6AFEAC1E2644BB /* Pods-Vacancies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacancies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacancies/Pods-Vacancies.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B3B2C09829A026FCEF3599 /* Pods_Vacancies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacancies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -191,6 +197,7 @@
 		443EF20C21A6013100AB22C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				44C32F0021A75AE5004B03A1 /* RealmObjects */,
 				443EF20F21A6071100AB22C1 /* DataSourceService.swift */,
 				443EF21421A60D5F00AB22C1 /* ParserService.swift */,
 				443EF20D21A6021800AB22C1 /* ServiceFactory.swift */,
@@ -244,6 +251,16 @@
 				44C32EF821A72C0A004B03A1 /* HomeTableModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		44C32F0021A75AE5004B03A1 /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+				44C32F0121A75B05004B03A1 /* VacancyObject.swift */,
+				44C32F0321A75B10004B03A1 /* SalaryObject.swift */,
+				44C32F0521A75B19004B03A1 /* EmployerObject.swift */,
+			);
+			path = RealmObjects;
 			sourceTree = "<group>";
 		};
 		5571737629026AFAE7EC3B35 /* Frameworks */ = {
@@ -390,12 +407,15 @@
 				443EF20321A5FF8900AB22C1 /* HomeModuleInterface.swift in Sources */,
 				443EF21821A60FB100AB22C1 /* NetworkRequest.swift in Sources */,
 				443EF21321A60CF200AB22C1 /* Vacancy.swift in Sources */,
+				44C32F0421A75B10004B03A1 /* SalaryObject.swift in Sources */,
 				44C32EF921A72C0A004B03A1 /* HomeTableModel.swift in Sources */,
 				443EF20621A5FF8900AB22C1 /* HomeVC.swift in Sources */,
 				443EF20821A5FF8900AB22C1 /* HomeInteractorIO.swift in Sources */,
+				44C32F0621A75B19004B03A1 /* EmployerObject.swift in Sources */,
 				443EF21D21A6170D00AB22C1 /* StorageService.swift in Sources */,
 				44C32EF121A71899004B03A1 /* VacancyResponse.swift in Sources */,
 				443EF20921A5FF8900AB22C1 /* HomeInteractor.swift in Sources */,
+				44C32F0221A75B05004B03A1 /* VacancyObject.swift in Sources */,
 				443EF20521A5FF8900AB22C1 /* HomeWireframe.swift in Sources */,
 				443EF21021A6071100AB22C1 /* DataSourceService.swift in Sources */,
 				44C32EFD21A738CA004B03A1 /* Employer.swift in Sources */,

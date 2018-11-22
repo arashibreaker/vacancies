@@ -14,3 +14,12 @@ struct Vacancy: Codable {
     var salary: Salary
     var employer: Employer
 }
+
+extension Vacancy {
+    init(vacancyObject: VacancyObject) {
+        self.id = vacancyObject.id
+        self.name = vacancyObject.name
+        self.salary = Salary(salaryObject: vacancyObject.salary!)
+        self.employer = Employer(employerObject: vacancyObject.employer!)
+    }
+}

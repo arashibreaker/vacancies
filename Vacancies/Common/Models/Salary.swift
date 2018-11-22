@@ -13,3 +13,11 @@ struct Salary: Codable {
     var to: Int?
     var currency: String?
 }
+
+extension Salary {
+    init(salaryObject: SalaryObject) {
+        self.from = salaryObject.from < 0 ? nil : salaryObject.from
+        self.to = salaryObject.to < 0 ? nil : salaryObject.to
+        self.currency = salaryObject.currency.isEmpty ? nil : salaryObject.currency
+    }
+}

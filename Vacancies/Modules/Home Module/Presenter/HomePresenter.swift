@@ -75,7 +75,7 @@ class HomePresenter: HomeInteractorOutput, HomeModuleInterface {
             return
         }
         userInterface.hideCenteredMessage()
-        self.interactor.loadVacancies()
+        self.interactor.reloadVacancies()
     }
     
     var modelsCount: Int {

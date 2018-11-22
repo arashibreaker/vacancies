@@ -12,3 +12,10 @@ struct Employer: Codable {
     var id: String
     var name: String
 }
+
+extension Employer {
+    init(employerObject: EmployerObject) {
+        self.id = employerObject.id
+        self.name = employerObject.name
+    }
+}

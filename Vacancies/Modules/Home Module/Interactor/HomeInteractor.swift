@@ -42,4 +42,9 @@ class HomeInteractor : HomeInteractorInput {
             output.loadMoreVacanciesSucceed(vacancies: vacancies)
         }
     }
+    
+    func reloadVacancies() {
+        self.vacanciesService.reset()
+        self.loadVacancies()
+    }
 }

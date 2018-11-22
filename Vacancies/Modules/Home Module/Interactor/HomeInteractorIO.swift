@@ -9,6 +9,7 @@
 protocol HomeInteractorInput {
     func loadVacancies()
     func loadMoreVacancies()
+    func reloadVacancies()
 }
 
 

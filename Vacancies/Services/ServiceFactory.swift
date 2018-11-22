@@ -18,6 +18,7 @@ class DefaultServiceFactory: ServiceFactory {
     init() {
         let parserService = HHNetworkJsonParserService()
         let dataSourceService = HHNetworkService(parser: parserService)
-        self.vacanciesService = DefaultVacanciesService(dataSource: dataSourceService)
+        let storageService = RealmStorageService()
+        self.vacanciesService = DefaultVacanciesService(dataSource: dataSourceService, storage: storageService)
     }
 }

@@ -13,10 +13,12 @@ protocol VacanciesService {
     
     func initialLoad(callback: (([Vacancy]?, Error?) -> ())?)
     func loadMore(callback: (([Vacancy]?, Error?) -> ())?)
+    func reset()
 }
 
 class DefaultVacanciesService: VacanciesService {
     private let dataSource: DataSourceService
+    private let storage: StorageService
     
     private static let query = "iOS"
     private var page: Int
@@ -25,8 +27,9 @@ class DefaultVacanciesService: VacanciesService {
     
     private(set) var vacancies: [Vacancy]
     
-    init(dataSource: DataSourceService) {
+    init(dataSource: DataSourceService, storage: StorageService) {
         self.dataSource = dataSource
+        self.storage = storage
         
         self.page = 0
         self.dateTo = Date()
@@ -35,6 +38,22 @@ class DefaultVacanciesService: VacanciesService {
     }
     
     func initialLoad(callback: (([Vacancy]?, Error?) -> ())?) {
+        if let dateTo = self.storage.loadDateTo(),
+            let page = self.storage.loadPage() {
+            let vacancies = self.storage.loadVacancies()
+            if vacancies.count > 0 {
+                self.dateTo = dateTo
+                self.page = page
+                self.dateFrom = self.getDateFrom(from: self.dateTo)
+                
+                self.vacancies = vacancies
+                callback?(self.vacancies, nil)
+                return
+            } else {
+                self.storage.clear()
+            }
+        }
+        
         self.page = 0
         self.dateTo = Date()
         
@@ -44,6 +63,13 @@ class DefaultVacanciesService: VacanciesService {
         self.dateFrom = dateFrom
         
         self.dataSource.loadVacancies(query: DefaultVacanciesService.query, page: self.page, dateFrom: dateFrom, dateTo: self.dateTo) { (vacancies, error) in
+            if let vacancies = vacancies {
+                self.vacancies = vacancies
+                
+                self.storage.saveDateTo(dateTo: self.dateTo)
+                self.storage.savePage(page: self.page)
+                self.storage.saveVacancies(vacancies: vacancies)
+            }
             callback?(vacancies, error)
         }
     }
@@ -56,7 +82,22 @@ class DefaultVacanciesService: VacanciesService {
         
         self.page += 1
         self.dataSource.loadVacancies(query: DefaultVacanciesService.query, page: self.page, dateFrom: dateFrom, dateTo: self.dateTo) { (vacancies, error) in
+            if let vacancies = vacancies {
+                self.vacancies.append(contentsOf: vacancies)
+                self.storage.savePage(page: self.page)
+                self.storage.saveVacancies(vacancies: vacancies)
+            }
             callback?(vacancies, error)
         }
+    }
+    
+    func reset() {
+        self.storage.clear()
+    }
+    
+    private func getDateFrom(from dateTo: Date) -> Date {
+        var components = DateComponents()
+        components.year = -1
+        return Calendar.current.date(byAdding: components, to: dateTo) ?? Date()
     }
 }
